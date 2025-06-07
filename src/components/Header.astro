@@ -1,0 +1,94 @@
+---
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">
+        <img src="/src/images/logo_transparent_background.png" alt="NudgeNote" class="logo__image" />
+        <span class="logo__text">NudgeNote</span>
+      </a>
+      <div class="nav__links">
+        <a href="/support" class="nav__link">Support</a>
+        <a href="https://apps.apple.com/app/id1234567890" class="nav__cta">
+          Download
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: var(--spacing-md) 0;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--color-text);
+  }
+  
+  .logo__image {
+    height: 32px;
+    width: auto;
+  }
+  
+  .logo__text {
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .nav__links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .nav__link {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+  
+  .nav__cta {
+    background: var(--color-gradient);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .nav__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .nav__link {
+      display: none;
+    }
+    
+    .logo__image {
+      height: 28px;
+    }
+  }
+</style>

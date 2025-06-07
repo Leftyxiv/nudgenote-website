@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy - NudgeNote" description="Learn how NudgeNote protects your privacy. We don't collect your data - everything stays on your device.">
+  <Header />
+  <main>
+    <section class="legal">
+      <div class="container">
+        <div class="legal__content">
+          <h1>Privacy Policy</h1>
+          <p class="legal__updated">Last Updated: June 6, 2025</p>
+          
+          <h2>Introduction</h2>
+          <p>NudgeNote is committed to protecting your privacy. This Privacy Policy explains how information is handled in the mobile application NudgeNote (the "App").</p>
+          
+          <div class="legal__highlight">
+            <h2>Our Privacy Commitment</h2>
+            <p><strong>NudgeNote is designed with privacy at its core. I do not collect, store, or have access to your personal data. All information stays on your device.</strong></p>
+          </div>
+          
+          <h2>Information We Don't Collect</h2>
+          <p>I want to be clear about what NudgeNote DOESN'T do:</p>
+          <ul>
+            <li>Doesn't collect your contacts</li>
+            <li>Doesn't store your messages</li>
+            <li>Doesn't track your location</li>
+            <li>Doesn't access your nudge schedules</li>
+            <li>Doesn't collect analytics or usage data</li>
+            <li>Doesn't use third-party analytics services</li>
+            <li>Doesn't show ads or work with advertisers</li>
+          </ul>
+          
+          <h2>Information Storage</h2>
+          <p>All data created and used by NudgeNote is stored locally on your device using Apple's SwiftData framework. This includes:</p>
+          <ul>
+            <li>Contact groups you create</li>
+            <li>Nudge schedules and settings</li>
+            <li>Message templates</li>
+            <li>App preferences</li>
+          </ul>
+          
+          <p>This data is:</p>
+          <ul>
+            <li>Stored only on your device</li>
+            <li>Backed up through your iCloud backup (if enabled)</li>
+            <li>Never transmitted to any servers</li>
+            <li>Never accessible by me or anyone else</li>
+          </ul>
+          
+          <h2>Permissions We Request</h2>
+          
+          <h3>Contacts Access</h3>
+          <p>The app requests access to your contacts solely to allow you to:</p>
+          <ul>
+            <li>Select contacts for your nudge groups</li>
+            <li>Display contact names and photos in the app</li>
+          </ul>
+          <p><strong>Important</strong>: The app only reads from your contacts. It never modifies them or uploads them anywhere.</p>
+          
+          <h3>Notifications</h3>
+          <p>The app requests notification permissions to:</p>
+          <ul>
+            <li>Send you local nudge reminders</li>
+            <li>Alert you when it's time to reach out to someone</li>
+          </ul>
+          <p>All notifications are generated locally on your device. We don't use push notifications from a server.</p>
+          
+          <h2>In-App Purchases</h2>
+          <p>NudgeNote Pro subscriptions are processed through Apple's App Store. When you make a purchase:</p>
+          <ul>
+            <li>Payment is handled entirely by Apple</li>
+            <li>We only receive a transaction receipt to unlock premium features</li>
+            <li>We don't store credit card or payment information</li>
+            <li>Apple's privacy policy governs payment processing</li>
+          </ul>
+          
+          <h2>Third-Party Services</h2>
+          <p>NudgeNote uses minimal third-party services:</p>
+          
+          <h3>Apple Services</h3>
+          <ul>
+            <li><strong>StoreKit</strong>: For in-app purchases</li>
+            <li><strong>SwiftData</strong>: For local data storage</li>
+            <li><strong>CloudKit</strong>: For iCloud backup (if you have it enabled)</li>
+          </ul>
+          <p>NudgeNote doesn't use any analytics, advertising, or tracking services.</p>
+          
+          <h2>Data Security</h2>
+          <p>Your data security is ensured by:</p>
+          <ul>
+            <li>All data stored locally on your device</li>
+            <li>iOS built-in security features</li>
+            <li>No data transmission to external servers</li>
+            <li>No account system that could be compromised</li>
+          </ul>
+          
+          <h2>Children's Privacy</h2>
+          <p>NudgeNote is not directed to children under 13. The app doesn't collect information from anyone, including children. The app has a 4+ age rating as it contains no objectionable content.</p>
+          
+          <h2>Your Rights</h2>
+          <p>Since all data is stored on your device, you have complete control:</p>
+          <ul>
+            <li><strong>Access</strong>: View all your data within the app</li>
+            <li><strong>Modify</strong>: Edit or delete any information</li>
+            <li><strong>Delete</strong>: Remove the app to delete all associated data</li>
+            <li><strong>Export</strong>: Use iOS backup to transfer data to a new device</li>
+          </ul>
+          
+          <h2>Changes to This Policy</h2>
+          <p>This Privacy Policy may be updated from time to time. Any changes will be communicated by:</p>
+          <ul>
+            <li>Updating the "Last Updated" date</li>
+            <li>Posting a notice in the app</li>
+            <li>Sending a notification (with your permission)</li>
+          </ul>
+          
+          <h2>Contact Us</h2>
+          <p>If you have questions about this Privacy Policy or NudgeNote's privacy practices, please contact me at:</p>
+          <p><strong>Email</strong>: <a href="mailto:hello@nudgenote.app">hello@nudgenote.app</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .legal__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .legal__updated {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .legal__highlight {
+    background: var(--color-bg-secondary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+    border-left: 4px solid var(--color-primary);
+  }
+  
+  .legal h1 {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .legal h2 {
+    color: var(--color-text);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .legal h3 {
+    color: var(--color-text);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .legal p {
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .legal ul {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+  }
+  
+  .legal li {
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .legal strong {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+</style>

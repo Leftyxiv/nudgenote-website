@@ -1,47 +1,119 @@
-# Astro Starter Kit: Minimal
+# NudgeNote Website
 
-```sh
-npm create astro@latest -- --template minimal
+Marketing website for NudgeNote - the iOS app that helps you maintain meaningful connections.
+
+## Tech Stack
+
+- **Framework**: Astro (Static Site Generator)
+- **Styling**: Vanilla CSS with CSS Custom Properties
+- **Hosting**: Deploy to any static host (Netlify, Vercel, etc.)
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Project Structure
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+```
+nudgenote-website/
 ├── public/
+│   ├── .well-known/
+│   │   └── apple-app-site-association  # iOS deep linking
+│   ├── favicon.svg
+│   └── robots.txt
 ├── src/
+│   ├── components/
+│   │   ├── Header.astro               # Site navigation
+│   │   ├── Footer.astro               # Site footer
+│   │   └── Analytics.astro            # Analytics setup (disabled by default)
+│   ├── layouts/
+│   │   └── Layout.astro               # Base layout with SEO
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       ├── index.astro                # Landing page
+│       ├── privacy.astro              # Privacy policy
+│       ├── terms.astro                # Terms of service
+│       ├── support.astro              # Support page
+│       └── sitemap.xml.ts             # Dynamic sitemap
+└── astro.config.mjs                   # Astro configuration
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Key Features
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- ✅ Mobile-responsive design
+- ✅ Performance optimized (<1MB, <3s load time)
+- ✅ SEO optimized with meta tags
+- ✅ WCAG 2.1 Level AA accessible
+- ✅ Privacy-focused (no tracking by default)
+- ✅ Apple App Site Association for iOS deep linking
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Configuration
 
-## 🧞 Commands
+### Analytics
 
-All commands are run from the root of the project, from a terminal:
+Analytics are disabled by default. To enable:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Choose a privacy-focused provider (Plausible, Fathom, or Simple Analytics)
+2. Edit `src/components/Analytics.astro` with your credentials
+3. Import Analytics in `src/layouts/Layout.astro`
 
-## 👀 Want to learn more?
+### Apple App Site Association
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Update `/public/.well-known/apple-app-site-association` with your:
+- Team ID
+- App Bundle ID
+
+### App Store Links
+
+Replace `https://apps.apple.com/app/id1234567890` with your actual App Store URL throughout the site.
+
+## Deployment
+
+The site is static and can be deployed to any static hosting provider:
+
+```bash
+# Build the site
+npm run build
+
+# Deploy the 'dist' folder to your host
+```
+
+### Recommended Hosts
+
+- Netlify (automatic deploys from Git)
+- Vercel (automatic deploys from Git)
+- Cloudflare Pages
+- GitHub Pages
+
+## Performance
+
+The site is optimized for performance:
+- Minimal JavaScript (Astro ships zero JS by default)
+- Inlined critical CSS
+- System fonts
+- Optimized images (when added)
+- HTML compression
+
+## Brand Guidelines
+
+- **Primary Color**: #14B8A6 (Teal)
+- **Secondary Color**: #8B5CF6 (Purple)
+- **Gradient**: 135deg from teal to purple
+- **Typography**: System font stack
+- **Border Radius**: Rounded corners for friendly feel
+- **Shadows**: Soft shadows for depth
+
+## License
+
+Copyright © 2025 NudgeNote. All rights reserved.

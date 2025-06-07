@@ -1,16 +1,449 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="NudgeNote - Never forget to stay in touch" description="NudgeNote helps you maintain meaningful connections with gentle reminders to reach out to the people who matter most.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <img src="/src/images/logo_transparent_background.png" alt="NudgeNote" class="hero__logo" />
+          <h1 class="hero__title">Never forget to stay in touch</h1>
+          <p class="hero__subtitle">
+            NudgeNote helps you maintain meaningful connections with gentle reminders to reach out to the people who matter most.
+          </p>
+          <div class="hero__cta">
+            <a href="https://apps.apple.com/app/id1234567890" class="btn btn--primary">
+              Download on the App Store
+            </a>
+            <p class="hero__supporting">Free to start • No credit card required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-prop">
+      <div class="container">
+        <h2 class="section__title">Why relationships fade</h2>
+        <p class="section__text">
+          Life gets busy. Days turn into weeks, weeks into months, and suddenly you realize you haven't talked to your best friend in ages. NudgeNote ensures that never happens again.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features__grid">
+          <div class="feature">
+            <h3 class="feature__title">Smart Groups</h3>
+            <h4 class="feature__subtitle">Organize your world</h4>
+            <p class="feature__description">
+              Create custom groups for family, friends, colleagues, or any way you organize your relationships. Set different reminder frequencies for each group.
+            </p>
+          </div>
+          
+          <div class="feature">
+            <h3 class="feature__title">Flexible Scheduling</h3>
+            <h4 class="feature__subtitle">Nudges that respect your time</h4>
+            <p class="feature__description">
+              Set reminders for specific days and times that work for you. Create recurring nudges or one-time reminders. Never get a nudge at an inconvenient moment.
+            </p>
+          </div>
+          
+          <div class="feature">
+            <h3 class="feature__title">Personal Messages</h3>
+            <h4 class="feature__subtitle">Always know what to say</h4>
+            <p class="feature__description">
+              Choose from thoughtful message templates or create your own to make reaching out easier.
+            </p>
+          </div>
+          
+          <div class="feature">
+            <h3 class="feature__title">Seamless Sending</h3>
+            <h4 class="feature__subtitle">From reminder to conversation</h4>
+            <p class="feature__description">
+              Tap a nudge and jump straight to Messages with a pre-filled text. No copying, no app switching, just genuine connection made easy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section__title">Start strengthening relationships in minutes</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number">1</span>
+            <div>
+              <h4 class="step__title">Import your contacts</h4>
+              <p class="step__description">Choose who you want to stay connected with</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">2</span>
+            <div>
+              <h4 class="step__title">Create groups</h4>
+              <p class="step__description">Organize contacts by relationship type or importance</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">3</span>
+            <div>
+              <h4 class="step__title">Set your schedule</h4>
+              <p class="step__description">Decide how often you want to reach out to each group</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">4</span>
+            <div>
+              <h4 class="step__title">Get gentle nudges</h4>
+              <p class="step__description">Receive thoughtful reminders at the perfect time</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">5</span>
+            <div>
+              <h4 class="step__title">Send messages</h4>
+              <p class="step__description">Tap to send a pre-written message or customize your own</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Simple, honest pricing</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Free Forever</h3>
+            <p class="pricing__price">$0</p>
+            <ul class="pricing__features">
+              <li>Up to 3 contact groups</li>
+              <li>Unlimited nudges</li>
+              <li>Basic message templates</li>
+              <li>All core features</li>
+            </ul>
+            <a href="https://apps.apple.com/app/id1234567890" class="btn btn--secondary">
+              Get Started Free
+            </a>
+          </div>
+          
+          <div class="pricing__card pricing__card--featured">
+            <h3 class="pricing__title">NudgeNote Pro</h3>
+            <p class="pricing__price">$5<span class="pricing__period">/year</span></p>
+            <p class="pricing__subtext">That's less than 42¢ per month</p>
+            <ul class="pricing__features">
+              <li>Unlimited contact groups</li>
+              <li>More message templates</li>
+              <li>Advanced scheduling options</li>
+              <li>My everlasting gratitude for supporting my dream of developing software</li>
+              <li>Direct support from the developer</li>
+            </ul>
+            <a href="https://apps.apple.com/app/id1234567890" class="btn btn--primary">
+              Start Free Trial
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta__title">Remove the friction from reaching out</h2>
+        <p class="cta__subtitle">A simple app built by someone who kept forgetting to text back</p>
+        <a href="https://apps.apple.com/app/id1234567890" class="btn btn--primary btn--large">
+          Download NudgeNote Free
+        </a>
+        <p class="cta__supporting">Available for iPhone • Requires iOS 17.0 or later</p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+    background: var(--color-bg-secondary);
+  }
+  
+  .hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero__logo {
+    height: 128px;
+    width: auto;
+    margin-bottom: 4px;
+  }
+  
+  .hero__title {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .hero__supporting {
+    margin-top: var(--spacing-sm);
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+  
+  /* Value Proposition */
+  .value-prop {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-bg-secondary);
+  }
+  
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature__title {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .feature__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .feature__description {
+    color: var(--color-text-light);
+  }
+  
+  /* How It Works */
+  .how-it-works {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .steps {
+    list-style: none;
+    max-width: 600px;
+    margin: var(--spacing-xl) auto 0;
+  }
+  
+  .step {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .step__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-gradient);
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .step__title {
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .step__description {
+    color: var(--color-text-light);
+    margin: 0;
+  }
+  
+  /* Pricing Section */
+  .pricing {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-bg-secondary);
+  }
+  
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+  }
+  
+  .pricing__card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+  
+  .pricing__card--featured {
+    border: 2px solid var(--color-primary);
+    transform: scale(1.05);
+  }
+  
+  .pricing__title {
+    color: var(--color-text);
+  }
+  
+  .pricing__price {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: var(--spacing-sm) 0;
+  }
+  
+  .pricing__period {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+  }
+  
+  .pricing__subtext {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .pricing__features {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    text-align: left;
+  }
+  
+  .pricing__features li {
+    padding: var(--spacing-xs) 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .pricing__features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  
+  /* CTA Section */
+  .cta {
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+  
+  .cta__title {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .cta__subtitle {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .cta__supporting {
+    margin-top: var(--spacing-md);
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+  
+  /* Common Elements */
+  .section__title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section__text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .btn--primary {
+    background: var(--color-gradient);
+    color: white;
+  }
+  
+  .btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .btn--secondary {
+    background: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  
+  .btn--secondary:hover {
+    background: var(--color-primary);
+    color: white;
+  }
+  
+  .btn--large {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1.125rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero__logo {
+      height: 104px;
+    }
+    
+    .hero__title {
+      font-size: 2rem;
+    }
+    
+    .hero__subtitle {
+      font-size: 1rem;
+    }
+    
+    .pricing__card--featured {
+      transform: none;
+    }
+  }
+</style>
