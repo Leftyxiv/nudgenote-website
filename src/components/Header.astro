@@ -10,9 +10,11 @@
       </a>
       <div class="nav__links">
         <a href="/support" class="nav__link">Support</a>
-        <a href="https://apps.apple.com/app/id1234567890" class="nav__cta">
-          Download
-        </a>
+        <!-- LAUNCH TODO: Replace with App Store link -->
+        <!-- <a href="https://apps.apple.com/app/YOUR_APP_ID" class="nav__cta">Download</a> -->
+        <button class="nav__cta nav__cta--disabled" disabled>
+          Coming Soon
+        </button>
       </div>
     </nav>
   </div>
@@ -80,6 +82,18 @@
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
     opacity: 1;
+  }
+  
+  /* LAUNCH TODO: Remove these disabled styles when going live */
+  .nav__cta--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .nav__cta--disabled:hover {
+    transform: none;
+    box-shadow: none;
+    opacity: 0.6;
   }
   
   @media (max-width: 768px) {
